@@ -1,0 +1,19 @@
+{
+  "name": "kids_code_app",
+  "version": "1.0.0",
+  "description": "Teaching kids to code",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lily, Matt, Mike, Leah",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.12.8",
+    "gulp-jshint": "^2.0.1",
+    "jshint": "^2.9.2"
+  },
+  "dependencies": {
+    "angular": "^1.5.5"
+  }
+}
