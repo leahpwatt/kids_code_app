@@ -5,10 +5,10 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
 	<script src = "https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.0/angular-ui-router.min.js"></script>
 	<script src="app.js"></script>
-	<script src="controllers/aboutCntrl.js"></script>
+	<script src="../controllers/aboutCntrl.js"></script>
 	<script src="../controllers/hdCntrl.js"></script>
 	<script src="../controllers/hdRevCntrl.js"></script>
-	<link href="style.css" type="text/css" rel="stylesheet" />
+	<!--<link href="style.css" type="text/css" rel="stylesheet" />-->
 </head>
 <body ng-app="kidsCode">
 	<nav class="navbar navbar-default" role="navigation">
@@ -17,7 +17,7 @@
 	    </div>
 	    <ul class="nav navbar-nav">
 	        <li><a ui-sref="home">Home</a></li>
-	        <li><a ui-sref="about">About</a></li>
+	        <li><a ui-sref="/about">About</a></li>
 	    </ul>
 	</nav>
 	<div ui-view></div>
