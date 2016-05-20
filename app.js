@@ -1,4 +1,4 @@
-var routerApp = angular.module("kidsCode", ['ui.router']);
+routerApp = angular.module("kidsCode", ['ui.router']);
 	routerApp.config(function($stateProvider, $urlRouterProvider) {
 	    $urlRouterProvider.otherwise('/home');
 	    $stateProvider 
@@ -25,3 +25,5 @@ var routerApp = angular.module("kidsCode", ['ui.router']);
 	        templateUrl: '/partials/heading-reveal.html',
 	        controller: "hdRevCntrl"  
 	    })
+
+	
