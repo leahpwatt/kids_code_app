@@ -9,7 +9,7 @@ var routerApp = angular.module("kidsCode", ['ui.router']);
 	        templateUrl: '/partials/home.html'    
 	    })
 
-	    .state('home.about', {	
+	    .state('about', {	
 	        url: '/about',
 	        templateUrl: '/partials/about.html',
 	        controller: "aboutCntrl"   
