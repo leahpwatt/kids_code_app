@@ -15,13 +15,13 @@ var routerApp = angular.module("kidsCode", ['ui.router']);
 	        controller: "aboutCntrl"   
 	    })
 	  
-	    .state('home.heading', {
+	    .state('heading', {
 	        url: '/heading',
 	        templateUrl: '/partials/heading.html',
 	        controller: "hdCntrl"   
 	    })
 
-	     .state('home.heading-reveal', {
+	     .state('heading-reveal', {
 	        url: '/your-heading',
 	        templateUrl: '/partials/heading-reveal.html',
 	        controller: "hdRevCntrl"  
