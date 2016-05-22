@@ -1,5 +1,5 @@
 angular.module('kidsCode')
-	.controller('testWord', function($http) {
+	.controller('hdCntrl', function($http) {
   
 // vulgar
     $http.get("http://www.purgomalum.com/service/plain?text=jackass")
