@@ -1,29 +1,14 @@
-var routerApp = angular.module("kidsCode", ['ui.router']);
-	routerApp.config(function($stateProvider, $urlRouterProvider) {
-	    $urlRouterProvider.otherwise('/home');
-	    $stateProvider 
-	       	
-	       	//input for users to enter code
-	    .state('home', {
-	        url: '/home',
-	        templateUrl: '/partials/home.html'    
+var routerApp = angular.module("kidsCode", ['ngRoute']);
+	routerApp.config(function($routeProvider) {
+	    $routeProvider.when('/',
+	    {
+	    	templateUrl: 'partials/exercise1.html',
+	    	controller: 'inputCntrl'
+	    })
+	    	.when('/exercise2',
+	    {
+	    	templateUrl: 'partials/exercise2.html',
+	    	controller: 'inputCntrl'
 	    })
 
-	    .state('about', {	
-	        url: '/about',
-	        templateUrl: '/partials/about.html',
-	        controller: "aboutCntrl"   
-	    })
-	  
-	    .state('heading', {
-	        url: '/heading',
-	        templateUrl: '/partials/heading.html',
-	        controller: "hdCntrl"   
-	    })
-
-	     .state('heading.heading-reveal', {
-	        url: '/your-heading',
-	        templateUrl: '/partials/heading-reveal.html',
-	        controller: "hdRevCntrl"  
-	    })
-	 });
+	 	});
