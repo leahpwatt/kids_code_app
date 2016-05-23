@@ -1,4 +1,4 @@
-#showHtml{
+#showHtml {
     top: 10%;
     width: 30%;
     height: 50%;
@@ -6,7 +6,7 @@
     display: inline-block;
 }
 
-#showCode{
+#renderCode {
     top: 10%;
     width: 30%;
     height: 50%;
