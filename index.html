@@ -4,29 +4,19 @@
 	<title>Kids Code</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
 	<script src = "https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.js"></script>
-	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 	<script src="app.js"></script>
 	<script src="accServ.js"></script>
 	<script src="vulServ.js"></script>
 	<script src="controllers/vulCntrl.js"></script>
 	<script src="controllers/inputCntrl.js"></script>
-	<!--<link href="style.css" type="text/css" rel="stylesheet" />-->
+	<link href="style.css" type="text/css" rel="stylesheet" />
 </head>
 <body ng-app="kidsCode">
-	<nav class="navbar navbar-default" role="navigation">
-	    <div class="navbar-header">
-	        <a class="navbar-brand" ui-sref="#">Kids Code</a>
-	    </div>
-	    <ul class="nav navbar-nav">
-	        <li><a href="home">Home</a></li>
-	        <li><a href="about">About</a></li>
-	       <!--  <li><a ui-sref="heading">Heading</a></li> -->
-	    </ul>
+	<nav>
+		<h1>Kids Code</h1>
 	</nav>
 	<div ng-view></div>
-	<div>
-		<section>{{input}}</section>
-		<!-- <section>panel for code</section> -->
-	</div>
+	<section id="showHtml">{{input}}</section>
+	<section id="showCode">{{input}}</section>
 </body>
 </html>
