@@ -21,7 +21,7 @@ var routerApp = angular.module("kidsCode", ['ui.router']);
 	        controller: "hdCntrl"   
 	    })
 
-	     .state('heading-reveal', {
+	     .state('heading.heading-reveal', {
 	        url: '/your-heading',
 	        templateUrl: '/partials/heading-reveal.html',
 	        controller: "hdRevCntrl"  
