@@ -1,0 +1,15 @@
+#showHtml {
+    top: 10%;
+    width: 30%;
+    height: 50%;
+    border: solid red;
+    display: inline-block;
+}
+
+#renderCode {
+    top: 10%;
+    width: 30%;
+    height: 50%;
+    border: solid blue;
+    display: inline-block;
+}
