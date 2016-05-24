@@ -1,5 +1,5 @@
 angular.module("kidsCode")
-	.factory("accServ", function($rootScope){
+	.factory("accServ", function($scope){
 		var answer = "";
 		function printExercise(txt){
 			addAnswer(txt);
@@ -14,4 +14,5 @@ angular.module("kidsCode")
 			printExercise: printExercise
 		};
 	});
+
 
