@@ -1,7 +1,7 @@
 angular.module("kidsCode")
-	.controller("inputCntrl4", function($scope, $rootScope, accServ, $location){
+	.controller("inputCntrl4", function($scope, $rootScope, $location){
 		$scope.showExercise = function(str){
-			accServ.printExercise(str);
+			// accServ.printExercise(str);
 			$location.path("/exercise5");
 			console.log(str);
 		}
