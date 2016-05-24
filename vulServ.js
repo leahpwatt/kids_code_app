@@ -5,8 +5,9 @@ angular.module("kidsCode")
 		var purgomalamResponse = "";
 		
 		function printExercise(txt) {
-        	return checkVulgar(txt);	    
-     }
+        	return checkVulgar(txt);	
+        	// $rootscope.tags = checkInputService.rendered;    
+     	}
 
 		function addAnswer(txt){
 			answer+=txt;

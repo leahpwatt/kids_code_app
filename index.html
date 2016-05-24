@@ -6,6 +6,8 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.js"></script>
 	<script src="app.js"></script>
 	<script src="vulServ.js"></script>
+	<script src="checkInputService.js"></script>
+	<script src="controllers/homeCntrl.js"></script>
 	<script src="controllers/vulCntrl.js"></script>
 	<script src="controllers/inputCntrl.js"></script>
 	<script src="controllers/inputCntrl2.js"></script>
@@ -13,6 +15,7 @@
 	<script src="controllers/inputCntrl4.js"></script>
 	<script src="controllers/inputCntrl5.js"></script>
 	<script src="accServ.js"></script>
+	<script src="project.js"></script>
 	<link href="style.css" type="text/css" rel="stylesheet" />
 </head>
 <body ng-app="kidsCode">
@@ -20,7 +23,9 @@
 		<h1>Kids Code</h1>
 	</nav>
 	<div ng-view></div>
-	<section id="showHtml">{{input}}</section>
-	<section id="renderCode">{{input}}</section>
+	<div ng-controller="homeCntrl">
+		<section id="renderCode"></section>
+		<section id="showHtml">{{input}}</section>
+	</div>
 </body>
 </html>

@@ -4,6 +4,7 @@ angular.module("kidsCode")
 		function printExercise(txt){
 			addAnswer(txt);
 			$rootScope.input=answer;
+			// $rootScope.tags="<h1>Leah</h1>"
 		}
 
 		function addAnswer(txt){
