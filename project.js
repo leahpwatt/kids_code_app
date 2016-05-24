@@ -1,9 +1,11 @@
 angular.module("kidsCode")
-	.directive('myDirective', function() {
-  return {
-    compile: function(element) {
-      element.html('<input ng-model="heading">{{heading}}');
+	.directive('kidDir', function(){
+   return {
+      restrict: "E",
+      link: function(scope, elem, attrs){
+        elem.html(scope.tags);      
+      }
     }
-  };
+  });
 
-});
+
