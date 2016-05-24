@@ -3,23 +3,24 @@
 <head>
 	<title>Kids Code</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
-	<script src = "https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.0/angular-ui-router.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.js"></script>
 	<script src="app.js"></script>
-	<script src="controllers/aboutCntrl.js"></script>
-	<script src="controllers/hdCntrl.js"></script>
-	<script src="controllers/hdRevCntrl.js"></script>
-	<!--<link href="style.css" type="text/css" rel="stylesheet" />-->
+	<script src="vulServ.js"></script>
+	<script src="controllers/vulCntrl.js"></script>
+	<script src="controllers/inputCntrl.js"></script>
+	<script src="controllers/inputCntrl2.js"></script>
+	<script src="controllers/inputCntrl3.js"></script>
+	<script src="controllers/inputCntrl4.js"></script>
+	<script src="controllers/inputCntrl5.js"></script>
+	<script src="accServ.js"></script>
+	<link href="style.css" type="text/css" rel="stylesheet" />
 </head>
 <body ng-app="kidsCode">
-	<nav class="navbar navbar-default" role="navigation">
-	    <div class="navbar-header">
-	        <a class="navbar-brand" ui-sref="#">Kids Code</a>
-	    </div>
-	    <ul class="nav navbar-nav">
-	        <li><a ui-sref="home">Home</a></li>
-	        <li><a ui-sref="about">About</a></li>
-	    </ul>
+	<nav>
+		<h1>Kids Code</h1>
 	</nav>
-	<div ui-view></div>
+	<div ng-view></div>
+	<section id="showHtml">{{input}}</section>
+	<section id="renderCode">{{input}}</section>
 </body>
 </html>

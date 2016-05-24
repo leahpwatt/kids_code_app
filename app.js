@@ -1,29 +1,30 @@
-var routerApp = angular.module("kidsCode", ['ui.router']);
-	routerApp.config(function($stateProvider, $urlRouterProvider) {
-	    $urlRouterProvider.otherwise('/home');
-	    $stateProvider 
-	       	
-	       	//input for users to enter code
-	    .state('home', {
-	        url: '/home',
-	        templateUrl: '/partials/home.html'    
+var routerApp = angular.module("kidsCode", ['ngRoute']);
+	routerApp.config(function($routeProvider) {
+	    $routeProvider.when('/',
+	    {
+	    	templateUrl: 'partials/exercise1.html',
+	    	controller: 'inputCntrl'
 	    })
+	    	.when('/exercise2',
+	    {
+	    	templateUrl: 'partials/exercise2.html',
+	    	controller: 'inputCntrl2' 
+	    })
+	    	.when('/exercise3', 
+	    {
+	    	templateUrl: 'partials/exercise3.html',
+	    	controller: 'inputCntrl3'
+	    })
+	    	.when('/exercise4', 
+	    {
+	    	templateUrl: 'partials/exercise4.html',
+	    	controller: 'inputCntrl4'
+	    })
+	    	.when('/exercise5', 
+	    {
+	    	templateUrl: 'partials/exercise5.html',
+	    	controller: 'inputCntrl5'
+	    })
+	    
 
-	    .state('about', {	
-	        url: '/about',
-	        templateUrl: '/partials/about.html',
-	        controller: "aboutCntrl"   
-	    })
-	  
-	    .state('heading', {
-	        url: '/heading',
-	        templateUrl: '/partials/heading.html',
-	        controller: "hdCntrl"   
-	    })
-
-	     .state('heading-reveal', {
-	        url: '/your-heading',
-	        templateUrl: '/partials/heading-reveal.html',
-	        controller: "hdRevCntrl"  
-	    })
 	 });
