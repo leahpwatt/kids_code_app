@@ -4,6 +4,7 @@ angular.module("kidsCode")
 
 		function saveInput(rendered){
 			userInput = rendered;
+			console.log("codeServ =" + userInput);
 			$rootScope.$broadcast("drawthemHTMLs", userInput)
 		}
 

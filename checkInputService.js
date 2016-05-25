@@ -19,8 +19,25 @@ angular.module("kidsCode")
 			}
 		}
 		
+		var checkColor = function (input){
+			var inputStyle       = " style='color:" + input + "'";
+			var saveRenderedText = codeServ.getInput(rendered);
+            // var saveRenderedText = rendered.text;
+            console.log("save = " + saveRenderedText);
+            var saveEndofString  = saveRenderedText.substring(saveRenderedText.indexOf(">")+1);
+            var openingTags      = saveRenderedText.substring(0, saveRenderedText.indexOf(">"));
+            var newOpeningTags   = openingTags + inputStyle + ">"; 
+            rendered.text = newOpeningTags + saveEndofString;
+            console.log(" new Rendered = " + rendered.text);  
+//			$rootScope.$broadcast("rerender", rendered)
+			console.log(rendered.text);
+			codeServ.saveInput(rendered.text);
+	
+		}
+
 		return {
-			compareParts: compareParts
+			compareParts: compareParts,
+			checkColor: checkColor
 		};
 	});
 
