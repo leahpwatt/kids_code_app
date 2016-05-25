@@ -1,12 +1,10 @@
 angular.module("kidsCode")
-	.controller("homeCntrl", function($scope, checkInputService){
-		// $scope.tags = checkInputService.rendered();
-		// console.log("homecontroller", checkInputService.rendered);
+	.controller("homeCntrl", function($scope, codeServ, checkInputService){
 		$scope.$on("drawthemHTMLs", function(event, data){
-			console.log('event recieved');
-			angular.element(renderCode).html(data.text);
-			$scope.tags = data.text;
-			console.log(data);
+			console.log('event recieved', data);
+			angular.element(renderCode).html(data);
+			$scope.input = data;
+			// console.log(data);
 		});
 	});
 

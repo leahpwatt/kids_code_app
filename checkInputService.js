@@ -1,5 +1,5 @@
 angular.module("kidsCode")
-	.factory("checkInputService", function($rootScope){
+	.factory("checkInputService", function($rootScope, codeServ){
 		var rendered = {text:""};
 
 		var compareParts = function (input){
@@ -16,18 +16,20 @@ angular.module("kidsCode")
 			if (endingTags != "</h1>"){
 			    alert("Wrong Input, pls try again");
 			} else {
-				rendered.text += input;
-				$rootScope.$broadcast("drawthemHTMLs", rendered)
-				console.log('event sent');
-				inputGood = true;
+				return true
+				// rendered.text += input;
+				// // $rootScope.$broadcast("drawthemHTMLs", rendered)
+				// inputGood = true;
 			}
-			return inputGood;
+			// return inputGood;
 		}
 		
 		return {
 			compareParts: compareParts,
 			rendered: function(){
+				codeServ(rendered.text);
 				return rendered.text;
+
 			}
 		};
 	});

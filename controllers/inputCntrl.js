@@ -1,5 +1,5 @@
 angular.module("kidsCode")
-.controller("inputCntrl", function($scope, $rootScope, vulServ, checkInputService, $location){
+.controller("inputCntrl", function($scope, $rootScope, codeServ, vulServ, checkInputService, $location){
 		$scope.showExercise = function(str){
 			if(checkInputService.compareParts(str)){
 				vulServ.printExercise(str);
@@ -12,3 +12,4 @@ angular.module("kidsCode")
 
 
 
+// drawthemHTMLs
