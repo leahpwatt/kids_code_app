@@ -1,14 +1,13 @@
 angular.module("kidsCode")
 	.factory("codeServ", function($rootScope){
-		var userInput = {};
+		var userInput = {}; //creating a variable to get the clean, accurate input
 
-		function saveInput(rendered){
-			userInput = rendered;
-			console.log("codeServ =" + userInput);
-			$rootScope.$broadcast("drawthemHTMLs", userInput)
+		function saveInput(rendered){ //saving rendered code
+			userInput = rendered; 
+			$rootScope.$broadcast("drawthemHTMLs", userInput) //which is accessed through $broadcast
 		}
 
-		function getInput(){
+		function getInput(){ //remaining functionality needed to print to the page
 			return userInput;
 		}
 		
