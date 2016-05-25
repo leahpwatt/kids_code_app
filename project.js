@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 angular.module("kidsCode")
 	.directive('myDir', function(){
    return {
