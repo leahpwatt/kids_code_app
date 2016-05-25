@@ -4,7 +4,6 @@ angular.module("kidsCode")
 			console.log('event recieved', data);
 			angular.element(renderCode).html(data);
 			$scope.input = data;
-			// console.log(data);
 		});
 	});
 

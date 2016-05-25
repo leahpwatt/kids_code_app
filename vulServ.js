@@ -10,25 +10,15 @@ angular.module("kidsCode")
         	$rootscope.tags = checkInputService.rendered;    
      	}
 
-		// function addAnswer(txt){
-		// 	answer+=txt;
-		// }
-
-    	function checkVulgar(txt) {
+		function checkVulgar(txt) {
       
     	var text = "http://www.purgomalum.com/service/plain?text=" + txt;
       	console.log(text);
 
 
-      return $http.get(text).then(function(response) {
+      	return $http.get(text).then(function(response) {
                console.log("response = " + response.data);
-               // txt = response.data;
                codeServ.saveInput(response.data);
-               // $rootScope.input=answer;
-
-               // rendered.text += answer;
-               // $rootScope.$broadcast("rerender", rendered)
-               // console.log(rendered);
                });
 
       }

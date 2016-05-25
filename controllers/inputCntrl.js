@@ -4,7 +4,7 @@ angular.module("kidsCode")
 			if(checkInputService.compareParts(str)){
 				vulServ.printExercise(str);
 				$location.path("/exercise2");
-			}
+			}  //return error
 		}
 
 
@@ -12,4 +12,3 @@ angular.module("kidsCode")
 
 
 
-// drawthemHTMLs
