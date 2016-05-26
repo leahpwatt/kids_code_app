@@ -7,8 +7,8 @@ angular.module("kidsCode")
 			$rootScope.$broadcast("drawthemHTMLs", userInput) //which is accessed through $broadcast
 		}
 
-		function getInput(){ //remaining functionality needed to print to the page
-			return userInput;
+		function getInput(){ //sending input to index.html
+			return userInput
 		}
 		
 		return {

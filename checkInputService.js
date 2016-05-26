@@ -16,6 +16,13 @@ angular.module("kidsCode")
 				return true
 			}
 		}
+		var checkImage = function(input){
+			if (input != "<img src='dog.jpg'>"){
+				return false
+			} else {
+				return true
+			}
+		}
 		
 		var checkColor = function (input){
 			var inputStyle       = " style='color:" + input + "'"; //builds style statement
@@ -30,7 +37,8 @@ angular.module("kidsCode")
 
 		return { //allows two functions to be invoked
 			compareParts: compareParts,
-			checkColor: checkColor
+			checkColor: checkColor,
+			checkImage: checkImage
 		};
 	});
 
