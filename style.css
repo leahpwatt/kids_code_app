@@ -1,7 +1,7 @@
 #showHtml {
     top: 10%;
-    width: 28%;
-    height: 400px;
+    width: 40%;
+    height: 600px;
     border: solid red;
     display: inline-block;
     font-family: "Courier New", Courier, monospace;
@@ -23,8 +23,8 @@
 }
 #renderCode {
     top: 10%;
-    width: 28%;
-    height: 400px;
+    width: 40%;
+    height: 600px;
     border: solid blue;
     display: inline-block;
 }

@@ -28,18 +28,11 @@ angular.module("kidsCode")
 	
 		}
 
-		var checkImg = function(input){
+		var checkImg = function(image){
 			var saveRenderedImg = codeServ.getInput(rendered);
-			saveRenderedImg += input;
-			console.log(saveRenderedImg);
-			codeServ.saveInput(rendered.text);
-			// 	console.log(saveRenderedImg);
-			// saveRenderedImg += codeServ.getInput(rendered.text);
-			console.log(saveRenderedImg);
-
-
-			codeServ.saveInput(input);
-			// if (input != "<img src='dog.jpg'>"){
+			var newConcat = saveRenderedImg.concat(image);
+			codeServ.saveInput(rendered.text + image);
+			// if (image != "<img src='dog.jpg'>"){
 			// 	return false
 			// } else {
 			// 	return true

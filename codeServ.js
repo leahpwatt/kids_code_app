@@ -20,7 +20,7 @@ angular.module("kidsCode")
 
 			saveInput: saveInput,
 			getInput: getInput,
-			saveImg: saveImg
+			saveImg: saveInput
 
 		}
 
