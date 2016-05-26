@@ -10,11 +10,17 @@ angular.module("kidsCode")
 		function getInput(){ //sending input to index.html
 			return userInput
 		}
+
+		function saveImg(input){
+			userInput = input;
+			$rootScope.$broadcast("drawthemHTMLs", userInput) //which is accessed through $broadcast
+		}
 		
 		return {
 
 			saveInput: saveInput,
-			getInput: getInput
+			getInput: getInput,
+			saveImg: saveImg
 
 		}
 

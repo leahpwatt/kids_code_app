@@ -16,13 +16,6 @@ angular.module("kidsCode")
 				return true
 			}
 		}
-		var checkImage = function(input){
-			if (input != "<img src='dog.jpg'>"){
-				return false
-			} else {
-				return true
-			}
-		}
 		
 		var checkColor = function (input){
 			var inputStyle       = " style='color:" + input + "'"; //builds style statement
@@ -35,10 +28,28 @@ angular.module("kidsCode")
 	
 		}
 
+		var checkImg = function(input){
+			var saveRenderedImg = codeServ.getInput(rendered);
+			saveRenderedImg += input;
+			console.log(saveRenderedImg);
+			codeServ.saveInput(rendered.text);
+			// 	console.log(saveRenderedImg);
+			// saveRenderedImg += codeServ.getInput(rendered.text);
+			console.log(saveRenderedImg);
+
+
+			codeServ.saveInput(input);
+			// if (input != "<img src='dog.jpg'>"){
+			// 	return false
+			// } else {
+			// 	return true
+			// }
+		}
+
 		return { //allows two functions to be invoked
 			compareParts: compareParts,
 			checkColor: checkColor,
-			checkImage: checkImage
+			checkImg: checkImg
 		};
 	});
 
