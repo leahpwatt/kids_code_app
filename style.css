@@ -13,3 +13,7 @@
     border: solid blue;
     display: inline-block;
 }
+
+h2, h3, h4 {
+	margin: 1%;
+}
