@@ -14,7 +14,13 @@
     margin-right: 5px;
 }
 
+#showHtml .in30 {
+    margin-left: 30px;
+}
 
+#showHtml .in40 {
+    margin-left: 40px;
+}
 #renderCode {
     top: 10%;
     width: 28%;
