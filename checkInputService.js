@@ -32,11 +32,11 @@ angular.module("kidsCode")
 			var saveRenderedImg = codeServ.getInput(rendered);
 			var newConcat = saveRenderedImg.concat(image);
 			codeServ.saveInput(rendered.text + image);
-			// if (image != "<img src='dog.jpg'>"){
-			// 	return false
-			// } else {
-			// 	return true
-			// }
+			if (image != "<img src='dog.jpg'>"){
+				return false
+			} else {
+				return true
+			}
 		}
 
 		return { //allows two functions to be invoked
