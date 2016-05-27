@@ -1,13 +1,21 @@
 angular.module("kidsCode")
-	.controller("inputCntrl4", function($scope, $rootScope, vulServ, checkInputService, $location){
-			$scope.showExercise = function(str){
-				checkInputService.checkColor(str);
-				$location.path("/exercise5");
-		}
+	.controller("inputCntrl4", function($scope, $rootScope, $location, checkInputService){
+	$scope.showExercise = function(input){
+			checkInputService.checkImgStyle(input); //runs input through compareParts function
+				$location.path("/exercise5"); //changing views
+			} 
+
 	});
 
 
+	// angular.module("kidsCode")
+	// .controller("inputCntrl4", function($scope, $rootScope, $location, checkInputService){
+	// $scope.showExercise = function(input){
+	// 		if(checkInputService.checkImgStyle(input)){ //runs input through compareParts function
+	// 			$location.path("/exercise5"); //changing views
+	// 		} else{
+	// 			alert("Oops! Please try again.");
+	// 	}
+	// }
 
-
-
-	
+	// });
