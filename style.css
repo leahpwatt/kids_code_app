@@ -1,3 +1,9 @@
+.drag{
+position:relative;
+cursor:hand;
+z-index: 100;
+}
+
 body {
 	background-color: #389343;
 }
@@ -88,6 +94,10 @@ button {
 button:hover {
   color: #669;
   text-decoration: none;
+}
+
+.exercise5button{
+    text-align: center;
 }
 
 #showHtml {
