@@ -10,17 +10,17 @@ body {
 
 @font-face {
 	font-family: "HennyPenny-Regular";
-	src: url(HennyPenny-Regular.otf);
+	src: url(fonts/HennyPenny-Regular.otf);
 }
 
 @font-face {
 	font-family: "Anonymous";
-	src: url(Anonymous.ttf);
+	src: url(fonts/Anonymous.ttf);
 }
 
 @font-face {
 	font-family: "Happy_Day_Dingbats";
-	src: url(Happy_Day_Dingbats.otf);
+	src: url(fonts/Happy_Day_Dingbats.otf);
 }
 
 #badges {
@@ -136,15 +136,13 @@ button:hover {
     display: inline-block;
     margin-left: 7%;
     margin-top: 2%;
-    background-color: #F1DB85;   
+    background-color: #F1DB85; 
+    text-align: center;  
 }
 
 #badges {
-	font-family: "Happy_Day_Dingbats";
-	font-size: 6em;
-	text-align: center;
 	width: 15%;
-    height: 510px;
+    height: 600px;
     border: 3px ridge #483C83;
     border-radius: 6px;
     display: inline;
@@ -178,6 +176,32 @@ h2, h3, h4 {
 h2 {
 	color: #E09645;
 	text-shadow: 1px 1px 0px #000;
+}
+
+#titleBadges {
+	font-size: 2.2em;
+	text-align: center;
+	padding-top: 10%;
+}
+
+#marginFix {
+	padding-top: 0;
+}
+
+.lessonNum {
+	font-family: "Anonymous";
+	font-size: 1em;
+	text-align: center;
+}
+
+.happyDing {
+	font-family: "Happy_Day_Dingbats";
+	font-size: 5.5em;
+	text-align: center;
+}
+
+#paddingFix {
+	padding-top: 12%;
 }
 
 /*.spinny {
