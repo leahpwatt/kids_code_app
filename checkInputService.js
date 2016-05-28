@@ -18,7 +18,7 @@ angular.module("kidsCode")
 		}
 		
 		var checkColor = function (input){
-			var inputStyle       = " style='color:" + input + ";margin-left:110px'"; //builds style statement
+			var inputStyle       = " style='color:" + input + ";text-align:center'"; //builds style statement
 			var saveRenderedText = codeServ.getInput(rendered); //getting and saving h1 string
             var saveEndofString  = saveRenderedText.substring(saveRenderedText.indexOf(">")+1); //pulling string apart to remove tags
             var openingTags      = saveRenderedText.substring(0, saveRenderedText.indexOf(">")); //saving end of string
