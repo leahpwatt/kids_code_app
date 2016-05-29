@@ -23,12 +23,18 @@ body {
 	src: url(fonts/Happy_Day_Dingbats.otf);
 }
 
-#badges {
-	font-family: "31368D_0_0";
+#logo {
+    text-align: center;
+    margin-top: 1%;
 }
 
-nav ul {
+nav {
+    text-align: center;
+}
+
+/*nav ul {
 	position: absolute;
+    display: inline-block;
 	left: 0;
 	top: 0;
     list-style-type: none;
@@ -38,10 +44,13 @@ nav ul {
     background-color: #BE4E48;
     width: 100%;
     border-bottom: 3px solid #483C83;
-}
+}*/
 
 nav li {
-    float: left;
+    /*float: left;*/
+    display: inline-block;
+    text-align: center;
+    width: 11%;
     font-family: "Anonymous";
 }
 
@@ -49,7 +58,7 @@ nav li a {
     display: block;
     color: #ffffff;
     text-align: center;
-    padding: 14px 16px;
+    /*padding: 14px 16px;*/
     text-decoration: none;
 }
 
@@ -158,6 +167,7 @@ button:hover {
     background-color: #BE4E48;
     color: #F90;
     text-shadow: 1px 1px 0px #000;
+    font-family: "31368D_0_0";
 }
 
 #badges p {
@@ -209,3 +219,5 @@ h2 {
 #paddingFix {
 	padding-top: 12%;
 }
+
+
