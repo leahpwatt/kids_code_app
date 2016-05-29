@@ -149,7 +149,7 @@ button:hover {
 #badges {
 	width: 15%;
     height: 600px;
-    border: 3px ridge #483C83;
+    border: 6px ridge #483C83;
     border-radius: 6px;
     display: inline;
     position: absolute;
