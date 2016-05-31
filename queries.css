@@ -1,0 +1,203 @@
+@media (max-width: 1220px) {
+
+	#badges p {
+	margin: .4%;
+	}
+
+    #titleBadges {
+    font-size: 2em;
+	padding-top: 8%;
+  	}
+ }
+
+@media (max-width: 1185px) {
+	
+	#badges {
+		width: 60%;
+	    height: 240px;
+	    display: block;
+	    position: relative;
+	    margin-left: auto;
+	    margin-right: auto;
+	    margin-bottom: 0;
+	}
+
+	#titleBadges {
+	    font-size: 2em;
+		padding-top: 2%;
+  	}
+
+  	#lesson1 {
+  		display: inline-block;
+  		padding: 1% 5%;
+  		margin-left: 12%;
+  	}
+
+  	#lesson2 {
+  		display: inline-block;
+  		padding: 1% 5%;
+  	}
+
+  	#lesson3 {
+  		display: inline-block;
+  		padding: 1% 5%;
+  	}
+
+	#showHtml {
+	    width: 40%;
+	    display: inline-block;
+	    position: absolute;
+	    margin-left: 3%;
+	    margin-top: 2%;
+	}
+
+	#renderCode {
+	    width: 40%;
+	    height: 600px;
+	    display: inline-block;
+	    margin-left: 7%;
+	    margin-top: 2%;
+	}
+
+ }
+
+ @media (max-width: 1140px) {
+ 	#lesson1 {
+  		margin-left: 10%;
+  	}
+ }
+
+  @media (max-width: 1050px) {
+ 	#lesson1 {
+  		margin-left: 8%;
+  	}
+ }
+
+ @media (max-width: 960px) {
+ 	#lesson1 {
+  		margin-left: 6%;
+  	}
+
+  	#titleBadges {
+		padding-top: 3%;
+  	}
+
+ }
+
+@media (max-width: 970px) {
+
+	#renderCode {
+	    width: 50%;
+	    height: 600px;
+	    display: block;
+	    margin-left: auto;
+	    margin-right: auto;
+	    margin-top: 2%;
+	}
+
+	#badges {
+		width: 50%;
+	    height: 370px;
+	    display: block;
+	    margin-top: 77%;
+	    margin-left: auto;
+	    margin-right: auto;
+	}
+
+	#showHtml {
+	    width: 50%;
+	    height: 600px;
+	    display: block;
+	    margin-left: 23.5%;
+	    margin-right: auto;
+	    margin-top: 2%;
+	}
+
+	#lesson1 {
+  		padding-left: 15%;
+  	}
+
+  	#lesson3 {
+  		padding-left: 37%;
+  	}
+
+ }
+
+ @media (max-width: 930px) {
+ 	#badges {
+	    margin-top: 85%;
+	}
+ }
+
+  @media (max-width: 850px) {
+ 	#badges {
+	    margin-top: 95%;
+	}
+ }
+
+  @media (max-width: 760px) {
+ 	#badges {
+	    margin-top: 110%;
+	}
+
+	#lesson1 {
+  		padding-left: 10%;
+  	}
+
+  	#lesson3 {
+  		padding-left: 35%;
+  	}
+ }
+
+ /* @media (max-width: 650px) {
+ 	#badges {
+	    margin-top: 130%;
+	}
+
+	#lesson1 {
+  		padding-left: 5%;
+  	}
+
+  	#lesson3 {
+  		padding-left: 30%;
+  	}
+ }
+
+  @media (max-width: 565px) {
+ 	#badges {
+    	height: 500px;
+	    margin-top: 150%;
+	}
+
+	#lesson1 {
+  		padding-left: 2%;
+  	}
+
+	#lesson2 {
+  		padding-left: 2%;
+  	}
+
+  	#lesson3 {
+  		padding-left: 30%;
+  	}
+ }
+
+   @media (max-width: 400px) {
+ 	#badges {
+    	height: 550px;
+	    margin-top: 190%;
+	    margin-left: 25%;
+	}
+
+	#lesson1 {
+  		padding-left: 15%;
+  	}
+
+	#lesson2 {
+		padding-left: 20%;	  	}
+
+  	#lesson3 {
+  		padding-left: 20%;
+  	}
+ }
+*/
