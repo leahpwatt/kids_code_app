@@ -66,6 +66,19 @@ nav li a {
     text-decoration: none;
 }
 
+.pix {
+    display: inline-block;
+    text-align: center;
+}
+
+.info {
+    text-align: center;
+}
+
+nav li a:hover {
+    background-color: #E09645;
+}
+
 input {
 	margin-bottom: 2%;
 }
@@ -357,3 +370,91 @@ h2 {
   transform: scaleY(1);
   -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
   transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+
+@media (max-width: 1220px) {
+
+	#badges p {
+	margin: .4%;
+	}
+
+    #titleBadges {
+    font-size: 2em;
+	padding-top: 8%;
+  	}
+ }
+
+@media (max-width: 1185px) {
+	
+	#badges {
+		width: 60%;
+	    height: 240px;
+	    display: block;
+	    position: relative;
+	    margin-left: auto;
+	    margin-right: auto;
+	    margin-bottom: 0;
+	}
+
+	#titleBadges {
+	    font-size: 2em;
+		padding-top: 2%;
+  	}
+
+  	#lesson1 {
+  		display: inline-block;
+  		padding: 1% 5%;
+  		margin-left: 12%;
+  	}
+
+  	#lesson2 {
+  		display: inline-block;
+  		padding: 1% 5%;
+  	}
+
+  	#lesson3 {
+  		display: inline-block;
+  		padding: 1% 5%;
+  	}
+
+	#showHtml {
+	    width: 40%;
+	    display: inline-block;
+	    position: absolute;
+	    margin-left: 3%;
+	    margin-top: 2%;
+	}
+
+	#renderCode {
+	    width: 40%;
+	    height: 600px;
+	    display: inline-block;
+	    margin-left: 7%;
+	    margin-top: 2%;
+	}
+
+ }
+
+ @media (max-width: 1140px) {
+ 	#lesson1 {
+  		margin-left: 10%;
+  	}
+ }
+
+  @media (max-width: 1050px) {
+ 	#lesson1 {
+  		margin-left: 8%;
+  	}
+ }
+
+ @media (max-width: 960px) {
+ 	#lesson1 {
+  		margin-left: 6%;
+  	}
+
+  	#titleBadges {
+		padding-top: 3%;
+  	}
+
+ }
+
