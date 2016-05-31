@@ -25,11 +25,6 @@ var routerApp = angular.module("kidsCode", ['ngRoute']);
 	    	templateUrl: 'partials/exercise5.html',
 	    	controller: 'inputCntrl5'
 	    })
-	    	.when('/assessment1', 
-	    {
-	    	templateUrl: 'partials/assessment1.html',
-	    	controller: 'inputCntrl6'
-	    })
-	    
+	    	    
 
 	 });

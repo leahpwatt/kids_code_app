@@ -1,7 +1,7 @@
 .drag{
-position:relative;
-cursor:hand;
-z-index: 100;
+	position:relative;
+	cursor:hand;
+	z-index: 100;
 }
 
 body {
@@ -89,15 +89,15 @@ input {
 }
 
 button {
-  margin: 10px auto;
-  cursor: pointer;
-  color: #fff;
-  background-color: #BE4E48;
-  font: 1.25em Anonymous;
-  padding: 0.3em 1em 0.2em;
-  text-shadow: 1px 1px 0px #000;
-  border-radius: 0.9em;
-  border: 1.5px solid #3d3d5c;
+  	margin: 10px auto;
+ 	cursor: pointer;
+  	color: #fff;
+  	background-color: #BE4E48;
+  	font: 1.25em Anonymous;
+  	padding: 0.3em 1em 0.2em;
+  	text-shadow: 1px 1px 0px #000;
+  	border-radius: 0.9em;
+  	border: 1.5px solid #3d3d5c;
 }
 
 #fixHeight {
@@ -105,8 +105,8 @@ button {
 }
 
 button:hover {
-  color: #669;
-  text-decoration: none;
+  	color: #669;
+ 	text-decoration: none;
 }
 
 .exercise5button{
@@ -219,5 +219,4 @@ h2 {
 #paddingFix {
 	padding-top: 12%;
 }
-
 
