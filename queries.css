@@ -1,12 +1,12 @@
 @media (max-width: 1220px) {
 
 	#badges p {
-	margin: .4%;
+		margin: .4%;
 	}
 
     #titleBadges {
-    font-size: 2em;
-	padding-top: 8%;
+	    font-size: 2em;
+		padding-top: 8%;
   	}
  }
 

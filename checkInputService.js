@@ -28,7 +28,7 @@ angular.module("kidsCode")
 	
 		}
 
-		var checkImg = function(image){
+		var checkImg = function(image){ 
 			var saveRenderedImg = codeServ.getInput(rendered);
 			var newConcat = saveRenderedImg.concat(image);
 			codeServ.saveInput(rendered.text + image);
