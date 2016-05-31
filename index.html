@@ -4,8 +4,6 @@
 	<title>Kids Code</title>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.js"></script>
-	<script src="highlight.pack.js"></script>
-	<link rel="stylesheet" href="styles/solarized-dark.css">
 	<script src="app.js"></script>
 	<script src="vulServ.js"></script>
 	<script src="codeServ.js"></script>
@@ -37,9 +35,6 @@
 	<div ng-controller="homeCntrl">
 		<section id="renderCode"></section>
 		<section id="showHtml">
-
-		<pre><code class="html">
-
 			<p>&lt&#33DOCTYPE html&gt</p>
 			<p>&lthtml&gt</p>
 			<p>&lthead&gt</p>
@@ -47,11 +42,10 @@
             <p class="in40">My first website!</p>
             <p class="in30">&lt/title&gt</p>
 			<p>&lt/head&gt</p>
-			<p class="in30">&ltbody&gt</p></code></pre>
-            <pre><code class="nohighlight"><p class="in40">{{input}}</p></code></pre>
-            <pre><code class="html"><p class="in30">&lt/body&gt</p>
+			<p class="in30">&ltbody&gt</p>
+			<p class="in40">{{input}}</p>
+            <p class="in30">&lt/body&gt</p>
             <p>&lt/html&gt</p>
-        </code></pre>
         </section>
         <section id="badges">
 			<p id="titleBadges" class="henny_penny">Add Your Badges!</p>
@@ -65,7 +59,5 @@
 			<p class="happyDing">V</p> -->
 		</section>
 	</div>
-<script>hljs.initHighlightingOnLoad();</script>
-<p id="diffColors">A B C D E F G H I J K L M N O P Q R S T U V W X Y Z</p>
 </body>
 </html>
