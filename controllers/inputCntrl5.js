@@ -3,6 +3,4 @@ angular.module("kidsCode")
 		$scope.showExercise = function(input){
 				
 			} 
-			
-		
 	});

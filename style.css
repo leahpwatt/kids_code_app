@@ -1,3 +1,13 @@
+/*
+Colors
+yellow #BEA748
+red #BE4E48
+green #389343
+purple #483C83
+*/
+
+
+
 .drag{
 	position:relative;
 	cursor:hand;
@@ -23,31 +33,25 @@ body {
 	src: url(fonts/Happy_Day_Dingbats.otf);
 }
 
-#logo {
-    text-align: center;
-    margin-top: 1%;
-}
-
-nav {
-    text-align: center;
-}
-
-/*nav ul {
-	position: absolute;
+nav ul {
+    position: absolute;
     display: inline-block;
-	left: 0;
-	top: 0;
+    left: 0;
+    top: 0;
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #BE4E48;
+    background-color: rgba(255, 255, 255, 0.15);
     width: 100%;
-    border-bottom: 3px solid #483C83;
-}*/
+}
 
+#logo {
+    text-align: center;
+    position: relative;
+    z-index: 99;
+}
 nav li {
-    /*float: left;*/
     display: inline-block;
     text-align: center;
     width: 11%;
@@ -58,12 +62,17 @@ nav li a {
     display: block;
     color: #ffffff;
     text-align: center;
-    /*padding: 14px 16px;*/
+    padding: 14px 16px;
     text-decoration: none;
 }
 
-nav li a:hover {
-    background-color: #E09645;
+.pix {
+    display: inline-block;
+    text-align: center;
+}
+
+.info {
+    text-align: center;
 }
 
 input {
@@ -218,5 +227,144 @@ h2 {
 
 #paddingFix {
 	padding-top: 12%;
+}
+
+/* Bounce To Bottom */
+.hvr-bounce-to-bottom {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.hvr-bounce-to-bottom:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #BEA748;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-bounce-to-bottom:hover, .hvr-bounce-to-bottom:focus, .hvr-bounce-to-bottom:active {
+  color: white;
+}
+.hvr-bounce-to-bottom:hover:before, .hvr-bounce-to-bottom:focus:before, .hvr-bounce-to-bottom:active:before {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+  -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+  transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+
+/* Bounce To Bottom2 */
+.hvr-bounce-to-bottom2 {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+
+.hvr-bounce-to-bottom2:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #483C83;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-bounce-to-bottom2:hover, .hvr-bounce-to-bottom2:focus, .hvr-bounce-to-bottom2:active {
+  color: white;
+}
+.hvr-bounce-to-bottom2:hover:before, .hvr-bounce-to-bottom2:focus:before, .hvr-bounce-to-bottom2:active:before {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+  -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+  transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+
+/* Bounce To Bottom3 */
+.hvr-bounce-to-bottom3 {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+}
+.hvr-bounce-to-bottom3:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #BE4E48;
+  -webkit-transform: scaleY(0);
+  transform: scaleY(0);
+  -webkit-transform-origin: 50% 0;
+  transform-origin: 50% 0;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-bounce-to-bottom3:hover, .hvr-bounce-to-bottom3:focus, .hvr-bounce-to-bottom3:active {
+  color: white;
+}
+.hvr-bounce-to-bottom3:hover:before, .hvr-bounce-to-bottom3:focus:before, .hvr-bounce-to-bottom3:active:before {
+  -webkit-transform: scaleY(1);
+  transform: scaleY(1);
+  -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+  transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
 }
 
