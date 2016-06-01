@@ -5,6 +5,23 @@
 	font-size: .8em;
 	}
 
+	#mobileNav {
+		display: inline-block;
+	}
+
+	#mobileNav ul li {
+		width: 20%;
+		margin-left: 4%;
+	}
+
+	#nav {
+		display: none;
+	}
+
+	#logo{
+		top: 10px;
+	}
+
 }
 
 @media (max-width: 880px) {

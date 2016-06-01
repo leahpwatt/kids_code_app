@@ -108,6 +108,10 @@ nav ul li a {
     text-decoration: none;
 }
 
+#mobileNav {
+  display: none;
+}
+
 .pix {
     display: inline-block;
     text-align: center;
