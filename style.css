@@ -389,6 +389,10 @@ h2 {
 	display: none;
 }
 
-/*.about #renderCode {
-	display: none;
-}*/
+#aboutPage {
+	height: 500px;
+}
+
+#aboutUs {
+	padding-top: 20px;
+}
