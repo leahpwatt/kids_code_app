@@ -139,7 +139,7 @@ input {
 
 button {
   	margin: 10px auto;
- 	  cursor: pointer;
+ 	cursor: pointer;
   	color: #fff;
   	background-color: #BE4E48;
   	font: 1.25em Anonymous;
@@ -186,7 +186,7 @@ button:hover {
 }
 
 #showHtml {
-    width: 30%;
+    width: 40%;
     height: 600px;
     border: 6px ridge #483C83;
     border-radius: 6px;
@@ -196,6 +196,7 @@ button:hover {
     margin-top: 2%;
     font-family: "Courier New", Courier, monospace;
     font-weight: bold;
+    font-size: 1.15em;
     background-color: #F1DB85;
 }
 
@@ -219,7 +220,7 @@ button:hover {
 }
 
 #renderCode {
-    width: 30%;
+    width: 40%;
     height: 600px;
     border: 6px ridge #483C83;
     border-radius: 6px;
@@ -233,18 +234,22 @@ button:hover {
 }
 
 #badges {
-	width: 15%;
-    height: 600px;
+	width: 60%;
+    height: 20%;
     border: 6px ridge #483C83;
     border-radius: 6px;
-    display: inline;
-    position: absolute;
-    margin-left: 37%;
-    margin-top: 2%;
+	display: block;
+	position: relative;
+	margin-top: 3%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 0;
+	padding-bottom: 3%;
     background-color: #BE4E48;
     color: #F90;
     text-shadow: 1px 1px 0px #000;
     font-family: "31368D_0_0";
+    text-align: center;
 }
 
 #badges p {
@@ -439,3 +444,19 @@ h2 {
   transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
 }
 
+#titleBadges {
+	font-size: 2em;
+	padding-top: 2%;
+}
+
+#lesson1, #lesson2, #lesson3, #lesson4 {
+  	display: inline-block;
+  	padding: 3%;
+  	padding-bottom: 1%;
+}
+
+#styledText {
+	color: #483C83;
+	font-size: 1.15em;
+	text-align: center;
+}
