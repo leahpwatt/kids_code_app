@@ -384,3 +384,7 @@ h2 {
 	font-size: 1.15em;
 	text-align: center;
 }
+
+#responsiveAlert {
+	display: none;
+}
