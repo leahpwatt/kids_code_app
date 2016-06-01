@@ -398,9 +398,7 @@ h2 {
 }
 
 #Leah a, #Lily a, #Mike a, #Matt a {
-	display: block;
-	text-decoration: none;
-	color: #fff;
+	display: inline;
 	padding-top: 5px;
 }
 
@@ -416,6 +414,6 @@ h2 {
 	font-size: 1.5em;
 }
 
-.pix img {
+/*.pix img {
 	border: 1px solid white;
-}
+}*/
