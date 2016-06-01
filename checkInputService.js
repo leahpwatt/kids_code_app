@@ -31,7 +31,7 @@ angular.module("kidsCode")
 		var checkImg = function(image){ 
 			var saveRenderedImg = codeServ.getInput(rendered);
 			var newConcat = saveRenderedImg.concat(image);
-			codeServ.saveInput(rendered.text + image);
+			codeServ.saveInput(rendered.text + "\n"+image);
 			if (image != "<img src='dog.jpg'>"){
 				return false
 			} else {
