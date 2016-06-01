@@ -23,16 +23,15 @@
 </head>
 <body ng-app="kidsCode">
 	<div id="logo">
-	<img src="images/KidsCodeLogoCrop2.png" alt="Kids Code">
+		<img src="images/KidsCodeLogoCrop2.png" alt="Kids Code">
 	</div>
-	<nav>
-		<!-- <h1 id="prodName">Kids Code</h1> -->
-		<ul>
-			<li><a href="#/" class="hvr-bounce-to-bottom">Home</a></li>
-			<li><a href="#/about" class="hvr-bounce-to-bottom2">About</a></li>
-			<li><a href="#" class="hvr-bounce-to-bottom3">Lessons</a></li>
-		</ul>
-	</nav>
+		<nav>
+			<ul>
+				<li><a href="#/" class="hvr-bounce-to-bottom">Home</a></li>
+				<li><a href="#/about" class="hvr-bounce-to-bottom" id="bounce2">About</a></li>
+				<li><a href="#" class="hvr-bounce-to-bottom" id="bounce3">Lessons</a></li>
+			</ul>
+		</nav>
 	<div ng-view></div>
 	<div ng-controller="homeCntrl">
 		<section id="renderCode"></section>
