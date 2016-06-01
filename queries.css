@@ -1,16 +1,47 @@
-@media (max-width: 1220px) {
+@media (max-width: 975px) {
 
-	#badges p {
-		margin: .4%;
+	/*Turn navbar into hamburger*/
+	#styledText {
+	font-size: .8em;
 	}
 
-    #titleBadges {
-	    font-size: 2em;
-		padding-top: 8%;
-  	}
- }
+}
 
-@media (max-width: 1185px) {
+@media (max-width: 880px) {
+
+	#styledText {
+	font-size: .9em;
+	}
+
+	#renderCode {
+	    width: 50%;
+	    height: 600px;
+	    display: block;
+	    margin-left: auto;
+	    margin-right: auto;
+	    margin-top: 2%;
+	}
+
+	#badges {
+		width: 50%;
+	    height: 370px;
+	    display: block;
+	    margin-top: 85%;
+	    margin-left: auto;
+	    margin-right: auto;
+	}
+
+	#showHtml {
+	    width: 50%;
+	    height: 600px;
+	    display: block;
+	    margin-left: 23.5%;
+	    margin-right: auto;
+	    margin-top: 2%;
+	}
+}
+
+/*@media (max-width: 1185px) {
 	
 	#badges {
 		width: 60%;
@@ -147,7 +178,7 @@
   	#lesson3 {
   		padding-left: 35%;
   	}
- }
+ }*/
 
  /* @media (max-width: 650px) {
  	#badges {
