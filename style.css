@@ -245,9 +245,10 @@ h2 {
 }
 
 #titleBadges {
-	font-size: 2.2em;
+	font-size: 2em;
 	text-align: center;
-	padding-top: 10%;
+	padding-top: 8%;
+	padding-bottom: 0;
 }
 
 #marginFix {
@@ -261,7 +262,7 @@ h2 {
 }
 
 .happyDing {
-	width: 60%;
+	width: 110px;
 	display: block;
 	margin-left: auto;
 	margin-right: auto;
