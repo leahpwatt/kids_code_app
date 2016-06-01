@@ -5,17 +5,19 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.js"></script>
 	<script src="app.js"></script>
+	<script src="controllers/homeCntrl.js"></script>
 	<script src="vulServ.js"></script>
 	<script src="codeServ.js"></script>
 	<script src="errAlert.js"></script>
 	<script src="checkInputService.js"></script>
-	<script src="controllers/homeCntrl.js"></script>
 	<script src="controllers/aboutCntrl.js"></script>
+	<script src="controllers/lessonCntrl.js"></script>
 	<script src="controllers/inputCntrl.js"></script>
 	<script src="controllers/inputCntrl2.js"></script>
 	<script src="controllers/inputCntrl3.js"></script>
 	<script src="controllers/inputCntrl4.js"></script>
 	<script src="controllers/inputCntrl5.js"></script>
+	<script src="controllers/lessonCntrl.js"></script>
 	<link href="style.css" type="text/css" rel="stylesheet" />
 	<link href="queries.css" type="text/css" rel="stylesheet" />
 	<script src="drag_and_drop.js"></script>
@@ -29,14 +31,14 @@
 			<ul>
 				<li><a href="#/" class="hvr-bounce-to-bottom">Home</a></li>
 				<li><a href="#/about" class="hvr-bounce-to-bottom" id="bounce2">About</a></li>
-				<li><a href="#" class="hvr-bounce-to-bottom" id="bounce3">Lessons</a></li>
+				<li><a href="#/moreLessons" class="hvr-bounce-to-bottom" id="bounce3">Lessons</a></li>
 			</ul>
 		</nav>
 		<nav id="mobileNav">
 			<ul>
 				<li><a href="#/">Home</a></li>
 				<li><a href="#/about">About</a></li>
-				<li><a href="#">Lessons</a></li>
+				<li><a href="#/moreLessons">Lessons</a></li>
 			</ul>
 		</nav>
 	<div ng-view></div>

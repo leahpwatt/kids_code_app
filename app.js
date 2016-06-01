@@ -12,6 +12,12 @@ var routerApp = angular.module("kidsCode", ['ngRoute']);
 	    	controller: 'aboutCntrl' 
 	    })
 
+			.when('/moreLessons',
+	    {
+	    	templateUrl: 'partials/moreLessons.html',
+	    	controller: 'lessonCntrl' 
+	    })
+
 	    	.when('/exercise2',
 	    {
 	    	templateUrl: 'partials/exercise2.html',
