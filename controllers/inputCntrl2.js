@@ -5,6 +5,7 @@ angular.module("kidsCode")
 //				   vulServ.printExercise(str);
 				   $location.path("/exercise3");
 			} else {
+				console.log("in inputCntrl2 = " + str);
 				codeServ.saveErr(str);
 				errAlert.displayAlert(str);
 			}
