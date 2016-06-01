@@ -67,7 +67,7 @@ angular.module("kidsCode")
 			} 
 			else {
 
-				var inputStyle       = " style='color:" + input + ";text-align:center'"; //builds style statement
+				var inputStyle       = " style='color:" + input + "'"; //builds style statement
             	var saveEndofString  = saveRenderedText.substring(saveRenderedText.indexOf(">")+1); //pulling string apart to remove tags
            		var openingTags      = saveRenderedText.substring(0, saveRenderedText.indexOf(">")); //saving end of string
             	var newOpeningTags   = openingTags + inputStyle + ">"; 
@@ -85,7 +85,7 @@ angular.module("kidsCode")
 				return false
 			} else {
 				var newConcat = saveRenderedImg.concat(image);
-				codeServ.saveInput(rendered.text + image);
+				codeServ.saveInput(rendered.text + "\n" + image);
 				return true
 			}
 		}
