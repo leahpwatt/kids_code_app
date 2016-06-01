@@ -139,7 +139,7 @@ input {
 
 button {
   	margin: 10px auto;
- 	cursor: pointer;
+ 	  cursor: pointer;
   	color: #fff;
   	background-color: #BE4E48;
   	font: 1.25em Anonymous;
@@ -148,6 +148,29 @@ button {
   	border-radius: 0.9em;
   	border: 1.5px solid #3d3d5c;
 }
+
+#docType {
+  color: green;
+}
+
+#html1, #html2{
+  color: green;
+}
+
+#head1, #head2{
+  color: green;
+}
+
+#title1, #title2{
+  color: purple;
+}
+
+#body1, #body2{
+  color: green;
+}
+
+
+
 
 #fixHeight {
 	height: 350px;
@@ -174,6 +197,10 @@ button:hover {
     font-family: "Courier New", Courier, monospace;
     font-weight: bold;
     background-color: #F1DB85;
+}
+
+#input1{
+  color: #483C83;
 }
 
 #showHtml p {
