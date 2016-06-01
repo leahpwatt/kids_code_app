@@ -11,16 +11,23 @@ angular.module("kidsCode")
 			return userInput
 		}
 
-		function saveImg(input){
-			userInput = input;
-			$rootScope.$broadcast("drawthemHTMLs", userInput) //which is accessed through $broadcast
+		// function saveImg(input){
+		// 	userInput += input;
+		// 	$rootScope.$broadcast("drawthemHTMLs", userInput); //which is accessed through $broadcast
+		// }
+
+		function saveErr(input) {
+			userError = input;
+			console.log("userError = " + userError);
+			$rootScope.$broadcast("drawthemErrors", userError); //which is accessed through $broadcast
 		}
 		
 		return {
 
 			saveInput: saveInput,
 			getInput: getInput,
-			saveImg: saveInput
+			// saveImg: saveImg,
+			saveErr: saveErr
 
 		}
 

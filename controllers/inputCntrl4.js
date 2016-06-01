@@ -1,10 +1,12 @@
 angular.module("kidsCode")
-	.controller("inputCntrl4", function($scope, $rootScope, $location, checkInputService){
-	$scope.showExercise = function(input){
-			checkInputService.checkImgStyle(input); //runs input through compareParts function
+.controller("inputCntrl4", function($scope, $rootScope, $location, errAlert, checkInputService){
+	$scope.showExercise = function(str){
+			if(checkInputService.checkImgStyle(str)) { 
+//			     vulServ.printExercise(str);
 				$location.path("/exercise5"); //changing views
-			} 
-
+	} else {
+				errAlert.displayAlert(str);
+			}
+		}
 	});
-
 
