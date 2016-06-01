@@ -390,9 +390,32 @@ h2 {
 }
 
 #aboutPage {
-	height: 500px;
+	height: 540px;
 }
 
 #aboutUs {
 	padding-top: 20px;
+}
+
+#Leah a, #Lily a, #Mike a, #Matt a {
+	display: block;
+	text-decoration: none;
+	color: #fff;
+	padding-top: 5px;
+}
+
+#Leah a:hover, #Lily a:hover, #Mike a:hover, #Matt a:hover {
+	color: #ee9731;
+}
+
+#Leah, #Lily, #Mike, #Matt {
+	color: #ee9731;
+}
+
+.info {
+	font-size: 1.5em;
+}
+
+.pix img {
+	border: 1px solid white;
 }

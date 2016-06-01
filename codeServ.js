@@ -18,7 +18,6 @@ angular.module("kidsCode")
 
 		function saveErr(input) {
 			userError = input;
-			console.log("userError = " + userError);
 			$rootScope.$broadcast("drawthemErrors", userError); //which is accessed through $broadcast
 		}
 		
